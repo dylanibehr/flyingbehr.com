@@ -6,6 +6,5 @@ url: "https://flyingbehr.com"
 github_username: dylanibehr
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
