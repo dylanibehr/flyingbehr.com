@@ -28,22 +28,26 @@
   <img id="lightbox-img" src="">
 </div>
 
-<!-- Custom Cursor -->
+<!-- Custom Cursor (desktop only) -->
 <div id="cursor"></div>
 
 <script>
-  // Custom cursor
-  const cursor = document.getElementById('cursor');
+  // Only run custom cursor on non-touch devices
+  if (!('ontouchstart' in window)) {
+    const cursor = document.getElementById('cursor');
 
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
 
-  document.querySelectorAll('a, button, img, .site-title, .site-nav a').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-grow'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-grow'));
-  });
+    document.querySelectorAll('a, button, img, .site-title, .site-nav a').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('cursor-grow'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-grow'));
+    });
+  } else {
+    document.getElementById('cursor').style.display = 'none';
+  }
 
   // Lightbox
   const lightbox = document.getElementById('lightbox');
