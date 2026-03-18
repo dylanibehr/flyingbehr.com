@@ -50,20 +50,22 @@
   }
 
   // Lightbox
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+  });
 
   document.querySelectorAll('.post-content img, .photo-grid img').forEach(img => {
     img.addEventListener('click', () => {
       lightboxImg.src = img.src;
       lightbox.style.display = 'flex';
       document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.width = '100%';
     });
-  });
-
-  lightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-    document.body.style.overflow = '';
   });
 </script>
 </body>
