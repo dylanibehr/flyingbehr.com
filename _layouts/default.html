@@ -23,5 +23,44 @@
   <footer class="site-footer">
     <p>{{ site.title }} &mdash; <a href="/feed.xml">RSS</a></p>
   </footer>
+  <!-- Lightbox -->
+<div id="lightbox" style="display:none">
+  <img id="lightbox-img" src="">
+</div>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+
+<script>
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  document.querySelectorAll('a, button, img, .site-title, .site-nav a').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-grow'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-grow'));
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  document.querySelectorAll('.post-content img, .photo-grid img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  });
+</script>
 </body>
 </html>
