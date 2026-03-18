@@ -32,7 +32,7 @@
 <div id="cursor"></div>
 
 <script>
-  // Only run custom cursor on non-touch devices
+// Custom cursor (desktop only)
   if (!('ontouchstart' in window)) {
     const cursor = document.getElementById('cursor');
 
@@ -50,22 +50,27 @@
   }
 
   // Lightbox
-  lightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-    document.body.style.overflow = '';
-    document.body.style.position = '';
-    document.body.style.top = '';
-  });
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  let scrollY = 0;
 
   document.querySelectorAll('.post-content img, .photo-grid img').forEach(img => {
     img.addEventListener('click', () => {
+      scrollY = window.scrollY;
       lightboxImg.src = img.src;
       lightbox.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
-      document.body.style.top = `-${window.scrollY}px`;
+      document.body.style.top = `-${scrollY}px`;
       document.body.style.width = '100%';
     });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollY);
   });
 </script>
 </body>
