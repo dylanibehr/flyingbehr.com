@@ -9,9 +9,14 @@ Bailey and I started the new year...
 
 Bailey and I started the new year in Oaxaca City. We touched down late the evening of the 31st and spent the next five days bopping around the city eating yummy food and checking out lots of cool art. We spent five days in the city with an awesome airbnb next to the Zocolo. 
 
-![Oaxaca market](/images/2026/oaxaca/oaxaca-1.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-2.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-3.jpg)
+!{: .third}
+![](/images/2026/oaxaca/oaxaca-1.jpg)
+
+{: .third}
+![](/images/2026/oaxaca/oaxaca-2.jpg)
+
+{: .third}
+![](/images/2026/oaxaca/oaxaca-3.jpg)
 ![Oaxaca market](/images/2026/oaxaca/oaxaca-4.jpg)
 ![Oaxaca market](/images/2026/oaxaca/oaxaca-5.jpg)
 ![Oaxaca market](/images/2026/oaxaca/oaxaca-6.jpg)

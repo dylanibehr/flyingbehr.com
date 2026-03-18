@@ -337,3 +337,18 @@ a {
 
   .post-title { font-size: 1.5rem; }
 }
+
+/* --- Photo Grid --- */
+.post-content .half img {
+  width: calc(50% - 0.5rem);
+  display: inline-block;
+  margin: 0.25rem;
+  vertical-align: top;
+}
+
+.post-content .third img {
+  width: calc(33.333% - 0.5rem);
+  display: inline-block;
+  margin: 0.25rem;
+  vertical-align: top;
+}
