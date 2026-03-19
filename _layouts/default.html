@@ -23,55 +23,56 @@
   <footer class="site-footer">
     <p>{{ site.title }} &mdash; <a href="/feed.xml">RSS</a></p>
   </footer>
+
   <!-- Lightbox -->
-<div id="lightbox" style="display:none">
-  <img id="lightbox-img" src="">
-</div>
+  <div id="lightbox" style="display:none">
+    <img id="lightbox-img" src="">
+  </div>
 
-<!-- Custom Cursor (desktop only) -->
-<div id="cursor"></div>
+  <!-- Custom Cursor (desktop only) -->
+  <div id="cursor"></div>
 
-<script>
-// Custom cursor (desktop only)
-  if (!('ontouchstart' in window)) {
-    const cursor = document.getElementById('cursor');
+  <script>
+    // Custom cursor (desktop only)
+    if (!('ontouchstart' in window)) {
+      const cursor = document.getElementById('cursor');
 
-    document.addEventListener('mousemove', e => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
+      document.addEventListener('mousemove', e => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+
+      document.querySelectorAll('a, button, img').forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('cursor-grow'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-grow'));
+      });
+    } else {
+      document.getElementById('cursor').style.display = 'none';
+    }
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    let scrollY = 0;
+
+    document.querySelectorAll('.post-content img, .photo-grid img').forEach(img => {
+      img.addEventListener('click', () => {
+        scrollY = window.scrollY;
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.width = '100%';
+      });
     });
 
-    document.querySelectorAll('a, button, img, .site-title, .site-nav a').forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('cursor-grow'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-grow'));
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, scrollY);
     });
-  } else {
-    document.getElementById('cursor').style.display = 'none';
-  }
-
-  // Lightbox
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  let scrollY = 0;
-
-  document.querySelectorAll('.post-content img, .photo-grid img').forEach(img => {
-    img.addEventListener('click', () => {
-      scrollY = window.scrollY;
-      lightboxImg.src = img.src;
-      lightbox.style.display = 'flex';
-      document.body.style.position = 'fixed';
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.width = '100%';
-    });
-  });
-
-  lightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.width = '';
-    window.scrollTo(0, scrollY);
-  });
-</script>
+  </script>
 </body>
 </html>

@@ -5,8 +5,6 @@ date: 2026-01-12
 image: /images/2026/oaxaca/oaxaca-28.jpg
 ---
 
-Bailey and I started the new year...
-
 Bailey and I started the new year in Oaxaca City. We touched down late the evening of the 31st and spent the next five days bopping around the city eating yummy food and checking out lots of cool art. We spent five days in the city with an awesome airbnb next to the Zocolo. 
 
 <div class="photo-grid thirds">
@@ -20,22 +18,82 @@ Bailey and I started the new year in Oaxaca City. We touched down late the eveni
   <img src="/images/2026/oaxaca/oaxaca-5.jpg">
 </div>
 
-![Oaxaca market](/images/2026/oaxaca/oaxaca-6.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-7.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-8.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-9.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-10.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-11.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-12.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-13.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-14.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-15.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-16.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-17.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-18.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-19.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-20.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-21.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-22.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-23.jpg)
-![Oaxaca market](/images/2026/oaxaca/oaxaca-24.jpg)
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-6.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-7.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-8.jpg">
+</div>
+
+![](/images/2026/oaxaca/oaxaca-9.jpg)
+
+![](/images/2026/oaxaca/oaxaca-10.jpg)
+
+<div class="photo-grid halves">
+  <img src="/images/2026/oaxaca/oaxaca-11.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-12.jpg">
+</div>
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-13.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-14.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-15.jpg">
+</div>
+
+![](/images/2026/oaxaca/oaxaca-16.jpg)
+
+<div class="photo-grid halves">
+  <img src="/images/2026/oaxaca/oaxaca-17.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-18.jpg">
+</div>
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-19.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-20.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-21.jpg">
+</div>
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-22.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-23.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-24.jpg">
+</div>
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-25.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-26.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-27.jpg">
+</div>
+
+![](/images/2026/oaxaca/oaxaca-28.jpg)
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-29.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-30.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-31.jpg">
+</div>
+
+<div class="photo-grid halves">
+  <img src="/images/2026/oaxaca/oaxaca-32.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-33.jpg">
+</div>
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-34.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-35.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-36.jpg">
+</div>
+
+![](/images/2026/oaxaca/oaxaca-37.jpg)
+
+<div class="photo-grid halves">
+  <img src="/images/2026/oaxaca/oaxaca-38.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-39.jpg">
+</div>
+
+<div class="photo-grid thirds">
+  <img src="/images/2026/oaxaca/oaxaca-40.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-41.jpg">
+  <img src="/images/2026/oaxaca/oaxaca-42.jpg">
+</div>
+
+![](/images/2026/oaxaca/oaxaca-43.jpg)
